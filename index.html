@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MyPrivateWallet</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <!-- CSS 
+	========================= -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Fonts CSS -->
+    <link rel="stylesheet" href="./assets/css/bicon.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./assets/css/plugins.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <!-- Modernizer JS -->
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script src="./assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <app-root></app-root>
+
+    <!-- jQuery JS -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="./assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="./assets/js/plugins.js"></script>
+    <!-- Ajax Mail -->
+    <script src="./assets/js/ajax-mail.js"></script>
+    <!-- Main JS -->
+    <script src="./assets/js/main_page.js"></script>
+    <script language="JavaScript">
+        function setVisibility(id) {
+            if (document.getElementById('bt1').value == 'Hide Address') {
+                document.getElementById('bt1').value = 'Show Address';
+                document.getElementById(id).style.display = 'none';
+            } else {
+                document.getElementById('bt1').value = 'Hide Address';
+                document.getElementById(id).style.display = 'inline';
+            }
+        }
+    </script>
+<script src="runtime-es2015.js" type="module"></script><script src="polyfills-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule></script><script src="polyfills-es5.js" nomodule></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule></script><script src="vendor-es2015.js" type="module"></script><script src="main-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule></script><script src="main-es5.js" nomodule></script></body>
+
+</html>
