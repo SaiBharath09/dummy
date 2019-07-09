@@ -1,18 +1,28 @@
 /*----------------------------------------*/
+
+
 /*  01. Theme default CSS
 /*----------------------------------------*/
 
+
 /*-- Google Font --*/
+
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700,800');
 
 /*-- Common Style --*/
-*, *::after, *::before {
-  box-sizing: border-box;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     height: 100%;
 }
-body{
+
+body {
     background-color: $body-color;
     line-height: 28px;
     font-size: 15px;
@@ -22,93 +32,131 @@ body{
     font-family: $opensans;
     color: $dark;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $heading-color;
     font-family: $opensans;
     font-weight: 400;
     margin-top: 0;
 }
+
 h1 {
     font-size: 58px;
     line-height: 1;
     font-weight: 700;
 }
+
 h2 {
     font-size: 30px;
     line-height: 36px;
 }
+
 h3 {
     font-size: 24px;
     line-height: 30px;
 }
+
 h4 {
     font-size: 18px;
     line-height: 24px;
 }
+
 h5 {
     font-size: 14px;
     line-height: 18px;
 }
+
 h6 {
     font-size: 12px;
     line-height: 14px;
 }
+
 p:last-child {
     margin-bottom: 0;
 }
-p{
+
+p {
     font-family: $opensans;
 }
-a, button {
+
+a,
+button {
     color: inherit;
     display: inline-block;
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
 }
-a, button, img, input, span {
+
+a,
+button,
+img,
+input,
+span {
     transition: all 0.3s ease 0s;
 }
+
 *:focus {
     outline: none !important;
 }
+
 a:focus {
     color: inherit;
     outline: none;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: none;
     color: $theme-color;
 }
-button, input[type="submit"] {
+
+button,
+input[type="submit"] {
     cursor: pointer;
 }
-img {max-width:100%;height:auto}
+
+img {
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
 ul {
     list-style: outside none none;
     margin: 0;
     padding: 0;
 }
 
-/*-- 
+
+/*--
     - Common Classes
 -----------------------------------------*/
+
 .fix {
-    overflow:hidden
+    overflow: hidden
 }
+
 .hidden {
     display: none;
 }
-.clear{
+
+.clear {
     clear: both;
 }
-@media #{$large-mobile}{
+
+@media #{$large-mobile} {
     .container {
         width: 450px;
     }
 }
-@media #{$small-mobile}{
+
+@media #{$small-mobile} {
     .container {
         width: 320px;
     }
@@ -117,40 +165,51 @@ ul {
 .capitalize {
     text-transform: capitalize;
 }
+
 .uppercase {
     text-transform: uppercase;
 }
 
-.no-gutters > .col, .no-gutters > [class*="col-"] {
-	padding-right: 0;
-	padding-left: 0;
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
     margin: 0;
 }
 
-/*-- 
+
+/*--
     - Background color
 -----------------------------------------*/
+
 .bg-white {
     background-color: $white;
 }
+
 .bg-light-grey {
     background-color: $light-grey;
 }
+
 .bg-dark {
     background-color: $dark;
 }
+
 .bg-grey {
     background-color: #f6f6f6;
 }
+
 .bluewood-bg {
     background: #354b65;
 }
+
 .bg-color-two {
     background: $theme-color-two;
 }
+
 .color-two {
     color: $theme-color-two;
 }
+
 
 /*- Overlay Color BG -*/
 
@@ -166,6 +225,7 @@ ul {
         height: 100%;
     }
 }
+
 .overly-bg-black {
     position: relative;
     &::before {
@@ -178,36 +238,50 @@ ul {
         height: 100%;
     }
 }
-/*-- 
+
+
+/*--
     - color
 -----------------------------------------*/
+
 .c-blue {
     color: $theme-color;
 }
 
-/*-- 
+
+/*--
     - Input Placeholder
 -----------------------------------------*/
-input:-moz-placeholder, textarea:-moz-placeholder {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-input::-moz-placeholder, textarea::-moz-placeholder {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-/*-- 
-    Scroll Up 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+
+/*--
+    Scroll Up
 -----------------------------------------*/
+
 #scrollUp {
     width: 40px;
     height: 40px;
@@ -218,7 +292,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     line-height: 40px;
     text-align: center;
     overflow: hidden;
-    @media #{$large-mobile}{
+    @media #{$large-mobile} {
         display: none !important;
     }
     & i {
@@ -228,28 +302,32 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
     &:hover i {
         animation-name: fadeInUp;
-        animation-duration:1s;
-        animation-fill-mode:both;
+        animation-duration: 1s;
+        animation-fill-mode: both;
         animation-iteration-count: infinite;
     }
 }
 
-/*-- 
+
+/*--
     - Main Wrapper
 -----------------------------------------*/
+
 .main-wrapper {
     &.header-transparent {
         padding: 0 !important;
         margin: 0 !important;
     }
 }
-/*-- 
+
+
+/*--
     - Section Padding
 -------------------------------------*/
-// Padding Top Bottom 
+
+// Padding Top Bottom
 .section-ptb {
     padding: 110px 0;
-    
     @media #{$desktop-device} {
         padding: 90px 0;
     }
@@ -263,10 +341,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         padding: 60px 0;
     }
 }
+
 // Section Padding Top
 .section-pt {
     padding-top: 110px;
-    
     @media #{$desktop-device} {
         padding-top: 90px;
     }
@@ -280,9 +358,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         padding-top: 60px;
     }
 }
+
 .section-pt-100 {
     padding-top: 100px;
-    
     @media #{$desktop-device} {
         padding-top: 70px;
     }
@@ -296,9 +374,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         padding-top: 30px;
     }
 }
+
 .section-pt-80 {
     padding-top: 80px;
-    
     @media #{$desktop-device} {
         padding-top: 60px;
     }
@@ -312,9 +390,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         padding-top: 30px;
     }
 }
+
 .section-pb-80 {
     padding-bottom: 80px;
-    
     @media #{$desktop-device} {
         padding-bottom: 60px;
     }
@@ -328,10 +406,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         padding-bottom: 30px;
     }
 }
+
 // Section Padding Bottom
 .section-pb {
     padding-bottom: 110px;
-    
     @media #{$desktop-device} {
         padding-bottom: 90px;
     }
@@ -345,9 +423,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         padding-bottom: 60px;
     }
 }
+
 .section-pb-100 {
     padding-bottom: 100px;
-    
     @media #{$desktop-device} {
         padding-bottom: 70px;
     }
@@ -361,28 +439,37 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         padding-bottom: 30px;
     }
 }
+
+
 /*-- Margin top --*/
+
 @for $i from 1 through 25 {
     .mt--#{5 * $i} {
         margin-top: 5px *$i;
     }
 }
 
+
 /*-- Margin Bottom --*/
+
 @for $i from 1 through 25 {
     .mb--#{5 * $i} {
         margin-bottom: 5px *$i;
     }
 }
 
+
 /*-- padding top --*/
+
 @for $i from 1 through 25 {
     .pt--#{5 * $i} {
         padding-top: 5px *$i;
     }
 }
 
+
 /*-- padding Bottom --*/
+
 @for $i from 1 through 25 {
     .pb--#{5 * $i} {
         padding-bottom: 5px *$i;

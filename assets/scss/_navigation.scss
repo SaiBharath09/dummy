@@ -1,6 +1,7 @@
-/*-- 
+/*--
     03. Mobile Menu Css
 -------------------------*/
+
 .mobile-menu {
     float: left;
     width: 100% !important;
@@ -12,15 +13,14 @@
             top: -50px;
             color: #000;
             left: 0;
-            @media #{$large-mobile}{
+            @media #{$large-mobile} {
                 top: -50px;
             }
-            @media #{$small-mobile}{
+            @media #{$small-mobile} {
                 top: -50px;
             }
             & span {
                 position: relative;
-                
                 /*---- Menu Open ----*/
                 &.menu-bar {
                     height: 2px;
@@ -28,7 +28,8 @@
                     background-color: $theme-color;
                     display: block;
                     margin: 8px 0;
-                    &::before, &::after {
+                    &::before,
+                    &::after {
                         content: "";
                         position: absolute;
                         left: 0;
@@ -43,7 +44,6 @@
                         bottom: -8px;
                     }
                 }
-                
                 /*---- Menu Close ----*/
                 &.menu-close {
                     height: 2px;
@@ -51,7 +51,8 @@
                     background-color: transparent;
                     display: block;
                     margin: 8px 0;
-                    &::before, &::after {
+                    &::before,
+                    &::after {
                         content: "";
                         position: absolute;
                         left: 0;
@@ -70,21 +71,21 @@
                 }
             }
         }
-        
         /*---- Mean Nav ----*/
         & .mean-nav {
-            background-color: $theme-color;
-            & > ul {
+            // background-color: $theme-color;
+            background-color: #d47724;
+            &>ul {
                 margin-bottom: 30px;
                 border: 1px solid #eeeeee;
                 border-top: 0px solid transparent;
                 overflow-x: hidden;
-                @media #{$large-mobile , $tablet-device}{
-                    max-height: 280px;
+                @media #{$large-mobile , $tablet-device} {
+                    // max-height: 280px;
                     overflow-y: auto;
                 }
-                @media #{$small-mobile}{
-                    max-height: 220px;
+                @media #{$small-mobile} {
+                    // max-height: 220px;
                     overflow-y: auto;
                 }
                 & li {
@@ -110,7 +111,6 @@
                             color: #ccc;
                             padding-left: 25px;
                         }
-                        
                         /*---- Menu Expand For Sub Menu ----*/
                         &.mean-expand {
                             border: 1px solid #eeeeee;
@@ -130,9 +130,10 @@
                             }
                         }
                     }
-                    
                     /*---- Sub Menu & Mega Menu ----*/
-                    & .sub-menu, .mega-menu, ul {
+                    & .sub-menu,
+                    .mega-menu,
+                    ul {
                         position: static;
                         background-color: #03b7d1;
                         margin: 0;
@@ -158,8 +159,9 @@
                                     display: none;
                                 }
                             }
-                            & .sub-menu, ul {
-                                background-color: rgba(0,0,0,0.04);
+                            & .sub-menu,
+                            ul {
+                                background-color: rgba(0, 0, 0, 0.04);
                                 & li {
                                     & a {
                                         border-top: 1px solid #dddddd;
@@ -168,23 +170,23 @@
                                         }
                                     }
                                 }
-                                & .sub-menu, ul {
-                                    background-color: rgba(0,0,0,0.05);
-                                & li {
-                                    & a {
-                                        border-top: 1px solid #eeeeee;
-                                        &.mean-expand {
-                                            border: 1px solid #eeeeee;
+                                & .sub-menu,
+                                ul {
+                                    background-color: rgba(0, 0, 0, 0.05);
+                                    & li {
+                                        & a {
+                                            border-top: 1px solid #eeeeee;
+                                            &.mean-expand {
+                                                border: 1px solid #eeeeee;
+                                            }
                                         }
                                     }
-                                }
                                 }
                             }
                         }
                     }
-                    
                 }
             }
         }
-    } 
+    }
 }
