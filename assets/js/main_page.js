@@ -1,8 +1,8 @@
-$(document).ready(function(){
-    "use strict";
-    
-new WOW().init();  
-    
+(function ($) {
+  "use strict";
+
+new WOW().init();
+
 /*--
     Menu Sticky
 -----------------------------------*/
@@ -30,7 +30,7 @@ menuNav.meanmenu({
     meanRevealPosition: 'right',
     meanMenuCloseSize: '0',
 });
-    
+
 /*--
     Service Slider
 --------------------------------------------*/
@@ -67,7 +67,7 @@ serviceSlider.slick({
         }
     ]
 });
-    
+
 /*--
     Testimonial Slider
 --------------------------------------------*/
@@ -122,7 +122,7 @@ latestBlog.slick({
 });
 
 
-    
+
 /*--
     Magnific Popup
 ------------------------*/
@@ -138,9 +138,9 @@ $('.popup-youtube').magnificPopup({
     removalDelay: 300,
     mainClass: 'mfp-fade'
 });
-    
+
 /* --
-    counterUp 
+    counterUp
 -----------------------------*/
 $('.counter-active').counterUp({
     delay: 10,
@@ -155,6 +155,6 @@ $.scrollUp({
     easingType: 'linear',
     scrollSpeed: 900,
     animation: 'fade'
-});   
-    
-})(jQuery);	
+});
+
+})(jQuery);
